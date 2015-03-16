@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import "ContainerViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -17,6 +17,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+
+    ContainerViewController *container = [[ContainerViewController alloc] initWithNibName:@"ContainerViewController" bundle:nil];
+    self.window.rootViewController = container;
+    [self.window makeKeyAndVisible];
     return YES;
 }
 

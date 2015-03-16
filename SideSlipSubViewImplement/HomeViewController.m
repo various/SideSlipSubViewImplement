@@ -1,30 +1,27 @@
 //
-//  LeftViewController.m
+//  HomeViewController.m
 //  SideSlipSubViewImplement
 //
-//  Created by Tim Geng on 3/14/15.
+//  Created by Tim Geng on 3/16/15.
 //  Copyright (c) 2015 GF. All rights reserved.
 //
 
-#import "LeftViewController.h"
+#import "HomeViewController.h"
 
-@interface LeftViewController ()
+@interface HomeViewController ()
 
 @end
 
-@implementation LeftViewController
+@implementation HomeViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
 }
 
-- (void)viewWillAppear:(BOOL)animated{
-    [super viewWillAppear:animated];
-}
-
-- (void)viewDidAppear:(BOOL)animated{
-    [super viewDidAppear:animated];
+-(IBAction)showLeftViewController:(id)sender{
+    UIButton *button = (UIButton *)sender;
+    self.showLeftBlock(button);
 }
 
 - (void)didReceiveMemoryWarning {

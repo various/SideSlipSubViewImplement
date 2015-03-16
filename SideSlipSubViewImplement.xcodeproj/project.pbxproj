@@ -9,13 +9,15 @@
 /* Begin PBXBuildFile section */
 		7FF9EDA61AB3D94500F71F25 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FF9EDA51AB3D94500F71F25 /* main.m */; };
 		7FF9EDA91AB3D94500F71F25 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FF9EDA81AB3D94500F71F25 /* AppDelegate.m */; };
-		7FF9EDAC1AB3D94500F71F25 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FF9EDAB1AB3D94500F71F25 /* ViewController.m */; };
-		7FF9EDAF1AB3D94500F71F25 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FF9EDAD1AB3D94500F71F25 /* Main.storyboard */; };
 		7FF9EDB11AB3D94500F71F25 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7FF9EDB01AB3D94500F71F25 /* Images.xcassets */; };
 		7FF9EDB41AB3D94500F71F25 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7FF9EDB21AB3D94500F71F25 /* LaunchScreen.xib */; };
 		7FF9EDC01AB3D94500F71F25 /* SideSlipSubViewImplementTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FF9EDBF1AB3D94500F71F25 /* SideSlipSubViewImplementTests.m */; };
 		7FF9EDCC1AB3E17800F71F25 /* LeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FF9EDCA1AB3E17800F71F25 /* LeftViewController.m */; };
 		7FF9EDCD1AB3E17800F71F25 /* LeftViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7FF9EDCB1AB3E17800F71F25 /* LeftViewController.xib */; };
+		7FF9EE1C1AB6D84600F71F25 /* ContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FF9EE1A1AB6D84600F71F25 /* ContainerViewController.m */; };
+		7FF9EE1D1AB6D84600F71F25 /* ContainerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7FF9EE1B1AB6D84600F71F25 /* ContainerViewController.xib */; };
+		7FF9EE211AB6D87300F71F25 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FF9EE1F1AB6D87300F71F25 /* HomeViewController.m */; };
+		7FF9EE221AB6D87300F71F25 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7FF9EE201AB6D87300F71F25 /* HomeViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +36,6 @@
 		7FF9EDA51AB3D94500F71F25 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7FF9EDA71AB3D94500F71F25 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7FF9EDA81AB3D94500F71F25 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		7FF9EDAA1AB3D94500F71F25 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		7FF9EDAB1AB3D94500F71F25 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		7FF9EDAE1AB3D94500F71F25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7FF9EDB01AB3D94500F71F25 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		7FF9EDB31AB3D94500F71F25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		7FF9EDB91AB3D94500F71F25 /* SideSlipSubViewImplementTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SideSlipSubViewImplementTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -45,6 +44,12 @@
 		7FF9EDC91AB3E17800F71F25 /* LeftViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftViewController.h; sourceTree = "<group>"; };
 		7FF9EDCA1AB3E17800F71F25 /* LeftViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftViewController.m; sourceTree = "<group>"; };
 		7FF9EDCB1AB3E17800F71F25 /* LeftViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LeftViewController.xib; sourceTree = "<group>"; };
+		7FF9EE191AB6D84600F71F25 /* ContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContainerViewController.h; sourceTree = "<group>"; };
+		7FF9EE1A1AB6D84600F71F25 /* ContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContainerViewController.m; sourceTree = "<group>"; };
+		7FF9EE1B1AB6D84600F71F25 /* ContainerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContainerViewController.xib; sourceTree = "<group>"; };
+		7FF9EE1E1AB6D87300F71F25 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		7FF9EE1F1AB6D87300F71F25 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		7FF9EE201AB6D87300F71F25 /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,15 +93,18 @@
 			children = (
 				7FF9EDA71AB3D94500F71F25 /* AppDelegate.h */,
 				7FF9EDA81AB3D94500F71F25 /* AppDelegate.m */,
-				7FF9EDAA1AB3D94500F71F25 /* ViewController.h */,
-				7FF9EDAB1AB3D94500F71F25 /* ViewController.m */,
-				7FF9EDAD1AB3D94500F71F25 /* Main.storyboard */,
 				7FF9EDB01AB3D94500F71F25 /* Images.xcassets */,
 				7FF9EDB21AB3D94500F71F25 /* LaunchScreen.xib */,
 				7FF9EDA31AB3D94500F71F25 /* Supporting Files */,
 				7FF9EDC91AB3E17800F71F25 /* LeftViewController.h */,
 				7FF9EDCA1AB3E17800F71F25 /* LeftViewController.m */,
 				7FF9EDCB1AB3E17800F71F25 /* LeftViewController.xib */,
+				7FF9EE191AB6D84600F71F25 /* ContainerViewController.h */,
+				7FF9EE1A1AB6D84600F71F25 /* ContainerViewController.m */,
+				7FF9EE1B1AB6D84600F71F25 /* ContainerViewController.xib */,
+				7FF9EE1E1AB6D87300F71F25 /* HomeViewController.h */,
+				7FF9EE1F1AB6D87300F71F25 /* HomeViewController.m */,
+				7FF9EE201AB6D87300F71F25 /* HomeViewController.xib */,
 			);
 			path = SideSlipSubViewImplement;
 			sourceTree = "<group>";
@@ -207,10 +215,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7FF9EDAF1AB3D94500F71F25 /* Main.storyboard in Resources */,
 				7FF9EDCD1AB3E17800F71F25 /* LeftViewController.xib in Resources */,
 				7FF9EDB41AB3D94500F71F25 /* LaunchScreen.xib in Resources */,
+				7FF9EE221AB6D87300F71F25 /* HomeViewController.xib in Resources */,
 				7FF9EDB11AB3D94500F71F25 /* Images.xcassets in Resources */,
+				7FF9EE1D1AB6D84600F71F25 /* ContainerViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,10 +237,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7FF9EDAC1AB3D94500F71F25 /* ViewController.m in Sources */,
 				7FF9EDCC1AB3E17800F71F25 /* LeftViewController.m in Sources */,
 				7FF9EDA91AB3D94500F71F25 /* AppDelegate.m in Sources */,
 				7FF9EDA61AB3D94500F71F25 /* main.m in Sources */,
+				7FF9EE211AB6D87300F71F25 /* HomeViewController.m in Sources */,
+				7FF9EE1C1AB6D84600F71F25 /* ContainerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,14 +264,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		7FF9EDAD1AB3D94500F71F25 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7FF9EDAE1AB3D94500F71F25 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		7FF9EDB21AB3D94500F71F25 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
