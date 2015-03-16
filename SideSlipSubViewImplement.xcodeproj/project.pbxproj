@@ -14,6 +14,8 @@
 		7FF9EDB11AB3D94500F71F25 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7FF9EDB01AB3D94500F71F25 /* Images.xcassets */; };
 		7FF9EDB41AB3D94500F71F25 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7FF9EDB21AB3D94500F71F25 /* LaunchScreen.xib */; };
 		7FF9EDC01AB3D94500F71F25 /* SideSlipSubViewImplementTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FF9EDBF1AB3D94500F71F25 /* SideSlipSubViewImplementTests.m */; };
+		7FF9EDCC1AB3E17800F71F25 /* LeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FF9EDCA1AB3E17800F71F25 /* LeftViewController.m */; };
+		7FF9EDCD1AB3E17800F71F25 /* LeftViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7FF9EDCB1AB3E17800F71F25 /* LeftViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,9 @@
 		7FF9EDB91AB3D94500F71F25 /* SideSlipSubViewImplementTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SideSlipSubViewImplementTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FF9EDBE1AB3D94500F71F25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7FF9EDBF1AB3D94500F71F25 /* SideSlipSubViewImplementTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SideSlipSubViewImplementTests.m; sourceTree = "<group>"; };
+		7FF9EDC91AB3E17800F71F25 /* LeftViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftViewController.h; sourceTree = "<group>"; };
+		7FF9EDCA1AB3E17800F71F25 /* LeftViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftViewController.m; sourceTree = "<group>"; };
+		7FF9EDCB1AB3E17800F71F25 /* LeftViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LeftViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +94,9 @@
 				7FF9EDB01AB3D94500F71F25 /* Images.xcassets */,
 				7FF9EDB21AB3D94500F71F25 /* LaunchScreen.xib */,
 				7FF9EDA31AB3D94500F71F25 /* Supporting Files */,
+				7FF9EDC91AB3E17800F71F25 /* LeftViewController.h */,
+				7FF9EDCA1AB3E17800F71F25 /* LeftViewController.m */,
+				7FF9EDCB1AB3E17800F71F25 /* LeftViewController.xib */,
 			);
 			path = SideSlipSubViewImplement;
 			sourceTree = "<group>";
@@ -200,6 +208,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7FF9EDAF1AB3D94500F71F25 /* Main.storyboard in Resources */,
+				7FF9EDCD1AB3E17800F71F25 /* LeftViewController.xib in Resources */,
 				7FF9EDB41AB3D94500F71F25 /* LaunchScreen.xib in Resources */,
 				7FF9EDB11AB3D94500F71F25 /* Images.xcassets in Resources */,
 			);
@@ -220,6 +229,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7FF9EDAC1AB3D94500F71F25 /* ViewController.m in Sources */,
+				7FF9EDCC1AB3E17800F71F25 /* LeftViewController.m in Sources */,
 				7FF9EDA91AB3D94500F71F25 /* AppDelegate.m in Sources */,
 				7FF9EDA61AB3D94500F71F25 /* main.m in Sources */,
 			);
@@ -412,6 +422,7 @@
 				7FF9EDC51AB3D94500F71F25 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7FF9EDC61AB3D94500F71F25 /* Build configuration list for PBXNativeTarget "SideSlipSubViewImplementTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +431,7 @@
 				7FF9EDC81AB3D94500F71F25 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
