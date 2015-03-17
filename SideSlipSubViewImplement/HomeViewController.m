@@ -10,13 +10,21 @@
 
 @interface HomeViewController ()
 
+@property(nonatomic,strong) IBOutlet UIButton *menuButton;
 @end
 
 @implementation HomeViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(backToHomeController)];
+    [self.view addGestureRecognizer:tap];
     // Do any additional setup after loading the view from its nib.
+}
+
+-(void)backToHomeController{
+    self.menuButton.tag = 0;
+    self.showLeftBlock(self.menuButton);
 }
 
 -(IBAction)showLeftViewController:(id)sender{
