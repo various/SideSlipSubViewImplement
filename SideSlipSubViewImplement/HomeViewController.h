@@ -11,6 +11,7 @@
 @interface HomeViewController : UIViewController
 
 @property(nonatomic,copy) void(^showLeftBlock)(UIButton *sender);
-@property(nonatomic,copy) void(^moveHomeView)(float offsetX);
+@property(nonatomic,copy) void(^moveHomeView)(UIPanGestureRecognizer *panGesture);
+@property(nonatomic,strong) IBOutlet UIButton *menuButton;
 
 @end

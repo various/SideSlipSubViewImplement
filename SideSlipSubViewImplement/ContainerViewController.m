@@ -10,6 +10,7 @@
 #import "LeftViewController.h"
 #import "HomeViewController.h"
 
+#define kOffsexX 70
 @interface ContainerViewController ()
 
 @property(nonatomic,strong) LeftViewController *leftViewController;
@@ -45,9 +46,42 @@
 -(void)initPanGestureAction{
     __weak typeof(self) weakSelf = self;
 
-    self.homeViewController.moveHomeView = ^void(float offsetX){
+    self.homeViewController.moveHomeView = ^void(UIPanGestureRecognizer *panGesture){
+        CGPoint translation = [panGesture translationInView:weakSelf.view];
+        switch (panGesture.state) {
+            case UIGestureRecognizerStateBegan:
+                
+                break;
+            case UIGestureRecognizerStateChanged:
+                weakSelf.homeViewController.view.frame = CGRectMake(translation.x, 0, weakSelf.view.frame.size.width, weakSelf.view.frame.size.height);
+
+                break;
+            case UIGestureRecognizerStateEnded:
+                
+                if (translation.x <= (weakSelf.view.frame.size.width - kOffsexX)/2) {
+                    
+                    [UIView animateKeyframesWithDuration:0.7 delay:0 options:UIViewKeyframeAnimationOptionBeginFromCurrentState animations:^{
+                        
+                        weakSelf.homeViewController.view.frame = CGRectMake(0, 0, weakSelf.view.frame.size.width, weakSelf.view.frame.size.height);
+                    } completion:^(BOOL finished){
+                        weakSelf.homeViewController.menuButton.tag = 1;
+                    }];
+                    
+                }else{
+                    [UIView animateKeyframesWithDuration:0.7 delay:0 options:UIViewKeyframeAnimationOptionBeginFromCurrentState animations:^{
+                        
+                        weakSelf.homeViewController.view.frame = CGRectMake(weakSelf.view.frame.size.width - kOffsexX, 0, weakSelf.view.frame.size.width, weakSelf.view.frame.size.height);
+                    } completion:^(BOOL finished){
+                        weakSelf.homeViewController.menuButton.tag = 0;
+                    }];
+                }
+                break;
+                
+            default:
+                break;
+        }
         
-        weakSelf.homeViewController.view.frame = CGRectMake(offsetX, 0, weakSelf.view.frame.size.width, weakSelf.view.frame.size.height);
+        
 
         
     };
@@ -66,7 +100,7 @@
         if (sender.tag == 1) {
             [UIView animateKeyframesWithDuration:0.7 delay:0 options:UIViewKeyframeAnimationOptionBeginFromCurrentState animations:^{
                 
-                weakSelf.homeViewController.view.frame = CGRectMake(weakSelf.view.frame.size.width - 70, 0, weakSelf.view.frame.size.width, weakSelf.view.frame.size.height);
+                weakSelf.homeViewController.view.frame = CGRectMake(weakSelf.view.frame.size.width - kOffsexX, 0, weakSelf.view.frame.size.width, weakSelf.view.frame.size.height);
             } completion:^(BOOL finished){
                 sender.tag = 0;
             }];

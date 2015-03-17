@@ -10,7 +10,6 @@
 
 @interface HomeViewController ()<UIGestureRecognizerDelegate>
 
-@property(nonatomic,strong) IBOutlet UIButton *menuButton;
 @end
 
 @implementation HomeViewController
@@ -22,14 +21,23 @@
     [self.view addGestureRecognizer:tap];
     
     UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(panMove:)];
+    pan.delegate = self;
     [self.view addGestureRecognizer:pan];
     // Do any additional setup after loading the view from its nib.
 }
 
 -(void)panMove:(UIPanGestureRecognizer *)gesture{
-    CGPoint translation = [gesture translationInView:self.view];
-    self.moveHomeView(translation.x);
     
+    self.moveHomeView(gesture);
+    
+}
+
+- (BOOL)gestureRecognizerShouldBegin:(UIPanGestureRecognizer *)gestureRecognizer{
+    if ([gestureRecognizer translationInView:self.view].x > 0 ) {
+        return YES;
+    }else{
+        return NO;
+    }
 }
 
 -(void)backToHomeController{
