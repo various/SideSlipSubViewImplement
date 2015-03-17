@@ -8,7 +8,7 @@
 
 #import "HomeViewController.h"
 
-@interface HomeViewController ()
+@interface HomeViewController ()<UIGestureRecognizerDelegate>
 
 @property(nonatomic,strong) IBOutlet UIButton *menuButton;
 @end
@@ -17,9 +17,19 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(backToHomeController)];
     [self.view addGestureRecognizer:tap];
+    
+    UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(panMove:)];
+    [self.view addGestureRecognizer:pan];
     // Do any additional setup after loading the view from its nib.
+}
+
+-(void)panMove:(UIPanGestureRecognizer *)gesture{
+    CGPoint translation = [gesture translationInView:self.view];
+    self.moveHomeView(translation.x);
+    
 }
 
 -(void)backToHomeController{

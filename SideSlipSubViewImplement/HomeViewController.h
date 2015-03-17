@@ -11,5 +11,6 @@
 @interface HomeViewController : UIViewController
 
 @property(nonatomic,copy) void(^showLeftBlock)(UIButton *sender);
+@property(nonatomic,copy) void(^moveHomeView)(float offsetX);
 
 @end

@@ -38,7 +38,19 @@
     
     [self initShowMenuAction];
     
+    [self initPanGestureAction];
     // Do any additional setup after loading the view from its nib.
+}
+
+-(void)initPanGestureAction{
+    __weak typeof(self) weakSelf = self;
+
+    self.homeViewController.moveHomeView = ^void(float offsetX){
+        
+        weakSelf.homeViewController.view.frame = CGRectMake(offsetX, 0, weakSelf.view.frame.size.width, weakSelf.view.frame.size.height);
+
+        
+    };
 }
 
 -(void)initHomeViewShadow{
@@ -48,18 +60,20 @@
 }
 
 -(void)initShowMenuAction{
+    __weak typeof(self) weakSelf = self;
+
     self.homeViewController.showLeftBlock = ^void(UIButton *sender){
         if (sender.tag == 1) {
             [UIView animateKeyframesWithDuration:0.7 delay:0 options:UIViewKeyframeAnimationOptionBeginFromCurrentState animations:^{
                 
-                self.homeViewController.view.frame = CGRectMake(self.view.frame.size.width - 70, 0, self.view.frame.size.width, self.view.frame.size.height);
+                weakSelf.homeViewController.view.frame = CGRectMake(weakSelf.view.frame.size.width - 70, 0, weakSelf.view.frame.size.width, weakSelf.view.frame.size.height);
             } completion:^(BOOL finished){
                 sender.tag = 0;
             }];
         }else if(sender.tag == 0){
             [UIView animateKeyframesWithDuration:0.7 delay:0 options:UIViewKeyframeAnimationOptionBeginFromCurrentState animations:^{
                 
-                self.homeViewController.view.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height);
+                weakSelf.homeViewController.view.frame = CGRectMake(0, 0, weakSelf.view.frame.size.width, weakSelf.view.frame.size.height);
             } completion:^(BOOL finished){
                 sender.tag = 1;
             }];
